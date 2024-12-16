@@ -1,0 +1,158 @@
+---
+title: "Keeling Curve"
+subtitle: ""
+title-block-banner-color: "#6c757d"
+title-block-banner: "#E5E5E5"
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    toc-title: "Report contents"
+    code-link: true
+    highlight-style: a11y
+    link-external-newwindow: true
+    embed-resources: true
+execute: 
+  message: false
+  warning: false
+bibliography: references.bib
+---
+
+## Introduction
+
+This report processes and visualises data using [R](https://www.r-project.org/) and [Observable JS](https://observablehq.com/@observablehq/observables-not-javascript) to demonstrate some of the functionality of [Quarto](https://quarto.org/).
+
+## Data
+
+The [data](https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html) derive from the Scripps Institution of Oceanography at UC San Diego [@keeling2001exchanges].
+
+## Load packages
+
+::: {.panel-tabset}
+
+### R
+```{r}
+#| echo: fenced
+#| label: load-packages
+
+library(readr)
+library(dplyr)
+library(lubridate)
+```
+
+### OJS
+
+```{ojs}
+//| echo: fenced
+//| label: load-libraries
+
+Plot = import("https://cdn.jsdelivr.net/npm/@observablehq/plot/+esm")
+d3 = require("d3@7")
+```
+:::
+
+## Load data
+
+```{r}
+#| echo: fenced
+#| label: load-data
+
+df <- read_csv("https://scrippsco2.ucsd.edu/assets/data/atmospheric/stations/in_situ_co2/monthly/monthly_in_situ_co2_mlo.csv", skip = 63, na = "-99.99") |> 
+  select(date = 4, average = 5) |> 
+  filter(!is.na(average)) |> 
+  mutate(date = as.Date(date_decimal(date, tz = "UTC"))) |>
+  arrange(date)
+
+ojs_define(df = df)
+```
+
+## Inspect data
+
+@tbl-readings shows the latest readings taken from the [Mauna Loa Observatory](https://gml.noaa.gov/obop/mlo/) in Hawaii.
+
+```{r}
+#| echo: fenced 
+#| label: tbl-readings
+#| tbl-cap: "Atmospheric CO₂ during 2024"
+
+library(gt)
+
+df |> 
+  filter(year(date) == 2024)|> 
+  arrange(desc(date)) |> 
+  gt() |> 
+   cols_label(
+    date = "Date",
+    average = "CO₂"
+  ) |> 
+  fmt_date(
+    columns = date,
+    date_style = "yMMMM"
+  ) |> 
+  tab_style(
+    style = cell_text(align  = "right", weight = "bold"),
+    locations = cells_column_labels()
+  ) |> 
+  tab_options(
+    table.align = "left",
+    table.width = px(250)
+  )
+```
+
+## Plot data
+
+@fig-co2 is the [Keeling Curve](https://keelingcurve.ucsd.edu/), an iconic line chart showing changes in atmospheric levels of carbon dioxide since 1958. CO<sub>2</sub> levels are currently rising at around 2.5 parts per million (ppm) each year.
+
+```{ojs}
+//| label: transform-data
+//| echo: false
+
+data = transpose(df).map(d => ({
+  date: new Date(d.date),
+  average: +d.average
+}))
+```
+
+```{ojs}
+//| echo: fenced
+//| code-fold: true
+//| label: fig-co2
+//| fig-alt: | 
+//|   Line chart showing atmospheric concentrations of carbon dixide between 1958 and the present.  
+//| fig-cap: |
+//|   Monthly average CO₂ atmospheric concentrations
+
+Plot.plot({
+  height: 396, width: 640,
+  marginRight: 50,
+	x: {
+    label: "",
+    labelArrow: null
+    },
+  y: {
+    domain: [300, d3.max(data, d => d.average)],
+		ticks: 5,
+    tickSize: 0,
+    tickPadding: 3,
+    axis: "right",
+    grid: true,
+    label: "CO₂ concentration (ppm)",
+    labelArrow: null
+    },
+  marks: [
+    Plot.lineY(data, {
+      x: "date", 
+      y: "average",
+      stroke: "#636363"
+      }),
+    Plot.tip(data, Plot.pointer({
+      x: "date",
+      y: "average",
+      title: (d) => [`${d3.timeFormat("%b %Y")(d.date)}\n${(d.average)}ppm`].join("   ")
+    })),
+    Plot.ruleY([300])
+    ],
+    style: {fontSize: "14px", fontFamily: "'Open Sans', sans-serif"},
+    marginTop: 45,
+  })
+```
