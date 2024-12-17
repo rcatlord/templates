@@ -29090,6 +29090,10 @@ module.exports = window.Shiny;
 <span>    date <span class="op">=</span> <span class="st">&quot;Date&quot;</span>,</span>
 <span>    average <span class="op">=</span> <span class="st">&quot;CO₂ (ppm)&quot;</span></span>
 <span>  <span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://gt.rstudio.com/reference/cols_align.html">cols_align</a></span><span class="op">(</span></span>
+<span>    align <span class="op">=</span> <span class="st">&quot;left&quot;</span>,</span>
+<span>    columns <span class="op">=</span> <span class="va">date</span></span>
+<span>  <span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu"><a href="https://gt.rstudio.com/reference/fmt_date.html">fmt_date</a></span><span class="op">(</span></span>
 <span>    columns <span class="op">=</span> <span class="va">date</span>,</span>
 <span>    date_style <span class="op">=</span> <span class="st">&quot;yMMMM&quot;</span></span>
@@ -29102,20 +29106,20 @@ module.exports = window.Shiny;
 Table 1: Atmospheric CO₂ between 1958-2024
 </figcaption><div aria-describedby="tbl-readings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="rhdomdbtyg" class=".gt_table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rhdomdbtyg table {
+<div id="kawykmiaxj" class=".gt_table" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#kawykmiaxj table {
 font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
-#rhdomdbtyg thead, #rhdomdbtyg tbody, #rhdomdbtyg tfoot, #rhdomdbtyg tr, #rhdomdbtyg td, #rhdomdbtyg th {
+#kawykmiaxj thead, #kawykmiaxj tbody, #kawykmiaxj tfoot, #kawykmiaxj tr, #kawykmiaxj td, #kawykmiaxj th {
 border-style: none;
 }
-#rhdomdbtyg p {
+#kawykmiaxj p {
 margin: 0;
 padding: 0;
 }
-#rhdomdbtyg .gt_table {
+#kawykmiaxj .gt_table {
 display: table;
 border-collapse: collapse;
 line-height: normal;
@@ -29140,11 +29144,11 @@ border-left-style: none;
 border-left-width: 2px;
 border-left-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_caption {
+#kawykmiaxj .gt_caption {
 padding-top: 4px;
 padding-bottom: 4px;
 }
-#rhdomdbtyg .gt_title {
+#kawykmiaxj .gt_title {
 color: #333333;
 font-size: 125%;
 font-weight: initial;
@@ -29155,7 +29159,7 @@ padding-right: 5px;
 border-bottom-color: #FFFFFF;
 border-bottom-width: 0;
 }
-#rhdomdbtyg .gt_subtitle {
+#kawykmiaxj .gt_subtitle {
 color: #333333;
 font-size: 85%;
 font-weight: initial;
@@ -29166,7 +29170,7 @@ padding-right: 5px;
 border-top-color: #FFFFFF;
 border-top-width: 0;
 }
-#rhdomdbtyg .gt_heading {
+#kawykmiaxj .gt_heading {
 background-color: #FFFFFF;
 text-align: center;
 border-bottom-color: #FFFFFF;
@@ -29177,12 +29181,12 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_bottom_border {
+#kawykmiaxj .gt_bottom_border {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_col_headings {
+#kawykmiaxj .gt_col_headings {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -29196,7 +29200,7 @@ border-right-style: none;
 border-right-width: 1px;
 border-right-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_col_heading {
+#kawykmiaxj .gt_col_heading {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -29215,7 +29219,7 @@ padding-left: 5px;
 padding-right: 5px;
 overflow-x: hidden;
 }
-#rhdomdbtyg .gt_column_spanner_outer {
+#kawykmiaxj .gt_column_spanner_outer {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -29226,13 +29230,13 @@ padding-bottom: 0;
 padding-left: 4px;
 padding-right: 4px;
 }
-#rhdomdbtyg .gt_column_spanner_outer:first-child {
+#kawykmiaxj .gt_column_spanner_outer:first-child {
 padding-left: 0;
 }
-#rhdomdbtyg .gt_column_spanner_outer:last-child {
+#kawykmiaxj .gt_column_spanner_outer:last-child {
 padding-right: 0;
 }
-#rhdomdbtyg .gt_column_spanner {
+#kawykmiaxj .gt_column_spanner {
 border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
@@ -29243,10 +29247,10 @@ overflow-x: hidden;
 display: inline-block;
 width: 100%;
 }
-#rhdomdbtyg .gt_spanner_row {
+#kawykmiaxj .gt_spanner_row {
 border-bottom-style: hidden;
 }
-#rhdomdbtyg .gt_group_heading {
+#kawykmiaxj .gt_group_heading {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -29271,7 +29275,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 text-align: left;
 }
-#rhdomdbtyg .gt_empty_group_heading {
+#kawykmiaxj .gt_empty_group_heading {
 padding: 0.5px;
 color: #333333;
 background-color: #FFFFFF;
@@ -29285,13 +29289,13 @@ border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 vertical-align: middle;
 }
-#rhdomdbtyg .gt_from_md > :first-child {
+#kawykmiaxj .gt_from_md > :first-child {
 margin-top: 0;
 }
-#rhdomdbtyg .gt_from_md > :last-child {
+#kawykmiaxj .gt_from_md > :last-child {
 margin-bottom: 0;
 }
-#rhdomdbtyg .gt_row {
+#kawykmiaxj .gt_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -29309,7 +29313,7 @@ border-right-color: #D3D3D3;
 vertical-align: middle;
 overflow-x: hidden;
 }
-#rhdomdbtyg .gt_stub {
+#kawykmiaxj .gt_stub {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -29321,7 +29325,7 @@ border-right-color: #D3D3D3;
 padding-left: 5px;
 padding-right: 5px;
 }
-#rhdomdbtyg .gt_stub_row_group {
+#kawykmiaxj .gt_stub_row_group {
 color: #333333;
 background-color: #FFFFFF;
 font-size: 100%;
@@ -29334,13 +29338,13 @@ padding-left: 5px;
 padding-right: 5px;
 vertical-align: top;
 }
-#rhdomdbtyg .gt_row_group_first td {
+#kawykmiaxj .gt_row_group_first td {
 border-top-width: 2px;
 }
-#rhdomdbtyg .gt_row_group_first th {
+#kawykmiaxj .gt_row_group_first th {
 border-top-width: 2px;
 }
-#rhdomdbtyg .gt_summary_row {
+#kawykmiaxj .gt_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -29349,14 +29353,14 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#rhdomdbtyg .gt_first_summary_row {
+#kawykmiaxj .gt_first_summary_row {
 border-top-style: solid;
 border-top-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_first_summary_row.thick {
+#kawykmiaxj .gt_first_summary_row.thick {
 border-top-width: 2px;
 }
-#rhdomdbtyg .gt_last_summary_row {
+#kawykmiaxj .gt_last_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -29365,7 +29369,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_grand_summary_row {
+#kawykmiaxj .gt_grand_summary_row {
 color: #333333;
 background-color: #FFFFFF;
 text-transform: inherit;
@@ -29374,7 +29378,7 @@ padding-bottom: 8px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#rhdomdbtyg .gt_first_grand_summary_row {
+#kawykmiaxj .gt_first_grand_summary_row {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -29383,7 +29387,7 @@ border-top-style: double;
 border-top-width: 6px;
 border-top-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_last_grand_summary_row_top {
+#kawykmiaxj .gt_last_grand_summary_row_top {
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 5px;
@@ -29392,10 +29396,10 @@ border-bottom-style: double;
 border-bottom-width: 6px;
 border-bottom-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_striped {
+#kawykmiaxj .gt_striped {
 background-color: rgba(128, 128, 128, 0.05);
 }
-#rhdomdbtyg .gt_table_body {
+#kawykmiaxj .gt_table_body {
 border-top-style: solid;
 border-top-width: 2px;
 border-top-color: #D3D3D3;
@@ -29403,7 +29407,7 @@ border-bottom-style: solid;
 border-bottom-width: 2px;
 border-bottom-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_footnotes {
+#kawykmiaxj .gt_footnotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -29416,7 +29420,7 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_footnote {
+#kawykmiaxj .gt_footnote {
 margin: 0px;
 font-size: 90%;
 padding-top: 4px;
@@ -29424,7 +29428,7 @@ padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#rhdomdbtyg .gt_sourcenotes {
+#kawykmiaxj .gt_sourcenotes {
 color: #333333;
 background-color: #FFFFFF;
 border-bottom-style: none;
@@ -29437,68 +29441,68 @@ border-right-style: none;
 border-right-width: 2px;
 border-right-color: #D3D3D3;
 }
-#rhdomdbtyg .gt_sourcenote {
+#kawykmiaxj .gt_sourcenote {
 font-size: 90%;
 padding-top: 4px;
 padding-bottom: 4px;
 padding-left: 5px;
 padding-right: 5px;
 }
-#rhdomdbtyg .gt_left {
+#kawykmiaxj .gt_left {
 text-align: left;
 }
-#rhdomdbtyg .gt_center {
+#kawykmiaxj .gt_center {
 text-align: center;
 }
-#rhdomdbtyg .gt_right {
+#kawykmiaxj .gt_right {
 text-align: right;
 font-variant-numeric: tabular-nums;
 }
-#rhdomdbtyg .gt_font_normal {
+#kawykmiaxj .gt_font_normal {
 font-weight: normal;
 }
-#rhdomdbtyg .gt_font_bold {
+#kawykmiaxj .gt_font_bold {
 font-weight: bold;
 }
-#rhdomdbtyg .gt_font_italic {
+#kawykmiaxj .gt_font_italic {
 font-style: italic;
 }
-#rhdomdbtyg .gt_super {
+#kawykmiaxj .gt_super {
 font-size: 65%;
 }
-#rhdomdbtyg .gt_footnote_marks {
+#kawykmiaxj .gt_footnote_marks {
 font-size: 75%;
 vertical-align: 0.4em;
 position: initial;
 }
-#rhdomdbtyg .gt_asterisk {
+#kawykmiaxj .gt_asterisk {
 font-size: 100%;
 vertical-align: 0;
 }
-#rhdomdbtyg .gt_indent_1 {
+#kawykmiaxj .gt_indent_1 {
 text-indent: 5px;
 }
-#rhdomdbtyg .gt_indent_2 {
+#kawykmiaxj .gt_indent_2 {
 text-indent: 10px;
 }
-#rhdomdbtyg .gt_indent_3 {
+#kawykmiaxj .gt_indent_3 {
 text-indent: 15px;
 }
-#rhdomdbtyg .gt_indent_4 {
+#kawykmiaxj .gt_indent_4 {
 text-indent: 20px;
 }
-#rhdomdbtyg .gt_indent_5 {
+#kawykmiaxj .gt_indent_5 {
 text-indent: 25px;
 }
-#rhdomdbtyg .katex-display {
+#kawykmiaxj .katex-display {
 display: inline-flex !important;
 margin-bottom: 0.75em !important;
 }
-#rhdomdbtyg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#kawykmiaxj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
 height: 0px !important;
 }
 </style>
-<div id="rhdomdbtyg" class="reactable html-widget" style="width:auto;height:auto;"></div>
+<div id="kawykmiaxj" class="reactable html-widget" style="width:auto;height:auto;"></div>
 <div style="font-family:system-ui, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif;border-top-style:solid;border-top-width:2px;border-top-color:#D3D3D3;border-bottom-style:solid;border-bottom-width:2px;border-bottom-color:#D3D3D3;padding-top:6px;padding-bottom:6px;padding-left:10px;padding-right:10px;">
 <div>
 <div class="gt_sourcenotes">
@@ -29507,7 +29511,7 @@ height: 0px !important;
 </div>
 <div></div>
 </div>
-<script type="application/json" data-for="rhdomdbtyg">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"date":["2024-10-15","2024-09-16","2024-08-16","2024-07-16","2024-06-16","2024-05-16","2024-04-15","2024-03-15","2024-02-16","2024-01-16","2023-12-16","2023-11-16","2023-10-15","2023-09-15","2023-08-15","2023-07-16","2023-06-16","2023-05-16","2023-04-16","2023-03-15","2023-02-15","2023-01-16","2022-12-16","2022-11-16","2022-10-15","2022-09-15","2022-08-15","2022-07-16","2022-06-16","2022-05-16","2022-04-16","2022-03-15","2022-02-15","2022-01-16","2021-12-16","2021-11-16","2021-10-15","2021-09-15","2021-08-15","2021-07-16","2021-06-16","2021-05-16","2021-04-16","2021-03-15","2021-02-15","2021-01-16","2020-12-16","2020-11-15","2020-10-15","2020-09-16","2020-08-16","2020-07-16","2020-06-16","2020-05-16","2020-04-15","2020-03-15","2020-02-16","2020-01-16","2019-12-16","2019-11-16","2019-10-15","2019-09-15","2019-08-15","2019-07-16","2019-06-16","2019-05-16","2019-04-16","2019-03-15","2019-02-15","2019-01-16","2018-12-16","2018-11-16","2018-10-15","2018-09-15","2018-08-15","2018-07-16","2018-06-16","2018-05-16","2018-04-16","2018-03-15","2018-02-15","2018-01-16","2017-12-16","2017-11-16","2017-10-15","2017-09-15","2017-08-15","2017-07-16","2017-06-16","2017-05-16","2017-04-16","2017-03-15","2017-02-15","2017-01-16","2016-12-16","2016-11-15","2016-10-15","2016-09-16","2016-08-16","2016-07-16","2016-06-16","2016-05-16","2016-04-15","2016-03-15","2016-02-16","2016-01-16","2015-12-16","2015-11-16","2015-10-15","2015-09-15","2015-08-15","2015-07-16","2015-06-16","2015-05-16","2015-04-16","2015-03-15","2015-02-15","2015-01-16","2014-12-16","2014-11-16","2014-10-15","2014-09-15","2014-08-15","2014-07-16","2014-06-16","2014-05-16","2014-04-16","2014-03-15","2014-02-15","2014-01-16","2013-12-16","2013-11-16","2013-10-15","2013-09-15","2013-08-15","2013-07-16","2013-06-16","2013-05-16","2013-04-16","2013-03-15","2013-02-15","2013-01-16","2012-12-16","2012-11-15","2012-10-15","2012-09-16","2012-08-16","2012-07-16","2012-06-16","2012-05-16","2012-04-15","2012-03-15","2012-02-16","2012-01-16","2011-12-16","2011-11-16","2011-10-15","2011-09-15","2011-08-15","2011-07-16","2011-06-16","2011-05-16","2011-04-16","2011-03-15","2011-02-15","2011-01-16","2010-12-16","2010-11-16","2010-10-15","2010-09-15","2010-08-15","2010-07-16","2010-06-16","2010-05-16","2010-04-16","2010-03-15","2010-02-15","2010-01-16","2009-12-16","2009-11-16","2009-10-15","2009-09-15","2009-08-15","2009-07-16","2009-06-16","2009-05-16","2009-04-16","2009-03-15","2009-02-15","2009-01-16","2008-12-16","2008-11-15","2008-10-15","2008-09-16","2008-08-16","2008-07-16","2008-06-16","2008-05-16","2008-04-15","2008-03-15","2008-02-16","2008-01-16","2007-12-16","2007-11-16","2007-10-15","2007-09-15","2007-08-15","2007-07-16","2007-06-16","2007-05-16","2007-04-16","2007-03-15","2007-02-15","2007-01-16","2006-12-16","2006-11-16","2006-10-15","2006-09-15","2006-08-15","2006-07-16","2006-06-16","2006-05-16","2006-04-16","2006-03-15","2006-02-15","2006-01-16","2005-12-16","2005-11-16","2005-10-15","2005-09-15","2005-08-15","2005-07-16","2005-06-16","2005-05-16","2005-04-16","2005-03-15","2005-02-15","2005-01-16","2004-12-16","2004-11-15","2004-10-15","2004-09-16","2004-08-16","2004-07-16","2004-06-16","2004-05-16","2004-04-15","2004-03-15","2004-02-16","2004-01-16","2003-12-16","2003-11-16","2003-10-15","2003-09-15","2003-08-15","2003-07-16","2003-06-16","2003-05-16","2003-04-16","2003-03-15","2003-02-15","2003-01-16","2002-12-16","2002-11-16","2002-10-15","2002-09-15","2002-08-15","2002-07-16","2002-06-16","2002-05-16","2002-04-16","2002-03-15","2002-02-15","2002-01-16","2001-12-16","2001-11-16","2001-10-15","2001-09-15","2001-08-15","2001-07-16","2001-06-16","2001-05-16","2001-04-16","2001-03-15","2001-02-15","2001-01-16","2000-12-16","2000-11-15","2000-10-15","2000-09-16","2000-08-16","2000-07-16","2000-06-16","2000-05-16","2000-04-15","2000-03-15","2000-02-16","2000-01-16","1999-12-16","1999-11-16","1999-10-15","1999-09-15","1999-08-15","1999-07-16","1999-06-16","1999-05-16","1999-04-16","1999-03-15","1999-02-15","1999-01-16","1998-12-16","1998-11-16","1998-10-15","1998-09-15","1998-08-15","1998-07-16","1998-06-16","1998-05-16","1998-04-16","1998-03-15","1998-02-15","1998-01-16","1997-12-16","1997-11-16","1997-10-15","1997-09-15","1997-08-15","1997-07-16","1997-06-16","1997-05-16","1997-04-16","1997-03-15","1997-02-15","1997-01-16","1996-12-16","1996-11-15","1996-10-15","1996-09-16","1996-08-16","1996-07-16","1996-06-16","1996-05-16","1996-04-15","1996-03-15","1996-02-16","1996-01-16","1995-12-16","1995-11-16","1995-10-15","1995-09-15","1995-08-15","1995-07-16","1995-06-16","1995-05-16","1995-04-16","1995-03-15","1995-02-15","1995-01-16","1994-12-16","1994-11-16","1994-10-15","1994-09-15","1994-08-15","1994-07-16","1994-06-16","1994-05-16","1994-04-16","1994-03-15","1994-02-15","1994-01-16","1993-12-16","1993-11-16","1993-10-15","1993-09-15","1993-08-15","1993-07-16","1993-06-16","1993-05-16","1993-04-16","1993-03-15","1993-02-15","1993-01-16","1992-12-16","1992-11-15","1992-10-15","1992-09-16","1992-08-16","1992-07-16","1992-06-16","1992-05-16","1992-04-15","1992-03-15","1992-02-16","1992-01-16","1991-12-16","1991-11-16","1991-10-15","1991-09-15","1991-08-15","1991-07-16","1991-06-16","1991-05-16","1991-04-16","1991-03-15","1991-02-15","1991-01-16","1990-12-16","1990-11-16","1990-10-15","1990-09-15","1990-08-15","1990-07-16","1990-06-16","1990-05-16","1990-04-16","1990-03-15","1990-02-15","1990-01-16","1989-12-16","1989-11-16","1989-10-15","1989-09-15","1989-08-15","1989-07-16","1989-06-16","1989-05-16","1989-04-16","1989-03-15","1989-02-15","1989-01-16","1988-12-16","1988-11-15","1988-10-15","1988-09-16","1988-08-16","1988-07-16","1988-06-16","1988-05-16","1988-04-15","1988-03-15","1988-02-16","1988-01-16","1987-12-16","1987-11-16","1987-10-15","1987-09-15","1987-08-15","1987-07-16","1987-06-16","1987-05-16","1987-04-16","1987-03-15","1987-02-15","1987-01-16","1986-12-16","1986-11-16","1986-10-15","1986-09-15","1986-08-15","1986-07-16","1986-06-16","1986-05-16","1986-04-16","1986-03-15","1986-02-15","1986-01-16","1985-12-16","1985-11-16","1985-10-15","1985-09-15","1985-08-15","1985-07-16","1985-06-16","1985-05-16","1985-04-16","1985-03-15","1985-02-15","1985-01-16","1984-12-16","1984-11-15","1984-10-15","1984-09-16","1984-08-16","1984-07-16","1984-06-16","1984-05-16","1984-04-15","1984-03-15","1984-02-16","1984-01-16","1983-12-16","1983-11-16","1983-10-15","1983-09-15","1983-08-15","1983-07-16","1983-06-16","1983-05-16","1983-04-16","1983-03-15","1983-02-15","1983-01-16","1982-12-16","1982-11-16","1982-10-15","1982-09-15","1982-08-15","1982-07-16","1982-06-16","1982-05-16","1982-04-16","1982-03-15","1982-02-15","1982-01-16","1981-12-16","1981-11-16","1981-10-15","1981-09-15","1981-08-15","1981-07-16","1981-06-16","1981-05-16","1981-04-16","1981-03-15","1981-02-15","1981-01-16","1980-12-16","1980-11-15","1980-10-15","1980-09-16","1980-08-16","1980-07-16","1980-06-16","1980-05-16","1980-04-15","1980-03-15","1980-02-16","1980-01-16","1979-12-16","1979-11-16","1979-10-15","1979-09-15","1979-08-15","1979-07-16","1979-06-16","1979-05-16","1979-04-16","1979-03-15","1979-02-15","1979-01-16","1978-12-16","1978-11-16","1978-10-15","1978-09-15","1978-08-15","1978-07-16","1978-06-16","1978-05-16","1978-04-16","1978-03-15","1978-02-15","1978-01-16","1977-12-16","1977-11-16","1977-10-15","1977-09-15","1977-08-15","1977-07-16","1977-06-16","1977-05-16","1977-04-16","1977-03-15","1977-02-15","1977-01-16","1976-12-16","1976-11-15","1976-10-15","1976-09-16","1976-08-16","1976-07-16","1976-06-16","1976-05-16","1976-04-15","1976-03-15","1976-02-16","1976-01-16","1975-12-16","1975-11-16","1975-10-15","1975-09-15","1975-08-15","1975-07-16","1975-06-16","1975-05-16","1975-04-16","1975-03-15","1975-02-15","1975-01-16","1974-12-16","1974-11-16","1974-10-15","1974-09-15","1974-08-15","1974-07-16","1974-06-16","1974-05-16","1974-04-16","1974-03-15","1974-02-15","1974-01-16","1973-12-16","1973-11-16","1973-10-15","1973-09-15","1973-08-15","1973-07-16","1973-06-16","1973-05-16","1973-04-16","1973-03-15","1973-02-15","1973-01-16","1972-12-16","1972-11-15","1972-10-15","1972-09-16","1972-08-16","1972-07-16","1972-06-16","1972-05-16","1972-04-15","1972-03-15","1972-02-16","1972-01-16","1971-12-16","1971-11-16","1971-10-15","1971-09-15","1971-08-15","1971-07-16","1971-06-16","1971-05-16","1971-04-16","1971-03-15","1971-02-15","1971-01-16","1970-12-16","1970-11-16","1970-10-15","1970-09-15","1970-08-15","1970-07-16","1970-06-16","1970-05-16","1970-04-16","1970-03-15","1970-02-15","1970-01-16","1969-12-16","1969-11-16","1969-10-15","1969-09-15","1969-08-15","1969-07-16","1969-06-16","1969-05-16","1969-04-16","1969-03-15","1969-02-15","1969-01-16","1968-12-16","1968-11-15","1968-10-15","1968-09-16","1968-08-16","1968-07-16","1968-06-16","1968-05-16","1968-04-15","1968-03-15","1968-02-16","1968-01-16","1967-12-16","1967-11-16","1967-10-15","1967-09-15","1967-08-15","1967-07-16","1967-06-16","1967-05-16","1967-04-16","1967-03-15","1967-02-15","1967-01-16","1966-12-16","1966-11-16","1966-10-15","1966-09-15","1966-08-15","1966-07-16","1966-06-16","1966-05-16","1966-04-16","1966-03-15","1966-02-15","1966-01-16","1965-12-16","1965-11-16","1965-10-15","1965-09-15","1965-08-15","1965-07-16","1965-06-16","1965-05-16","1965-04-16","1965-03-15","1965-02-15","1965-01-16","1964-12-16","1964-11-15","1964-10-15","1964-09-16","1964-08-16","1964-07-16","1964-06-16","1964-05-16","1964-01-16","1963-12-16","1963-11-16","1963-10-15","1963-09-15","1963-08-15","1963-07-16","1963-06-16","1963-05-16","1963-04-16","1963-03-15","1963-02-15","1963-01-16","1962-12-16","1962-11-16","1962-10-15","1962-09-15","1962-08-15","1962-07-16","1962-06-16","1962-05-16","1962-04-16","1962-03-15","1962-02-15","1962-01-16","1961-12-16","1961-11-16","1961-10-15","1961-09-15","1961-08-15","1961-07-16","1961-06-16","1961-05-16","1961-04-16","1961-03-15","1961-02-15","1961-01-16","1960-12-16","1960-11-15","1960-10-15","1960-09-16","1960-08-16","1960-07-16","1960-06-16","1960-05-16","1960-04-15","1960-03-15","1960-02-16","1960-01-16","1959-12-16","1959-11-16","1959-10-15","1959-09-15","1959-08-15","1959-07-16","1959-06-16","1959-05-16","1959-04-16","1959-03-15","1959-02-15","1959-01-16","1958-12-16","1958-11-16","1958-09-15","1958-08-15","1958-07-16","1958-05-16","1958-04-16","1958-03-15"],"average":[422.05,421.59,422.7,425.4,426.62,426.7,426.3,425.22,424.34,422.62,421.65,420.11,418.41,418.06,419.56,421.62,423.39,423.78,422.73,420.51,420.33,419.13,418.46,417.03,415.31,415.42,416.75,418.71,420.68,420.78,420.01,418.45,418.99,418.01,416.43,414.81,413.52,412.93,414.38,416.66,418.7,418.95,418.26,417.1,416.47,415.15,413.88,412.89,411.12,411.17,412.52,414.43,416.29,417.16,416.11,414.44,414.04,413.32,411.81,410.16,408.4,408.48,410.02,411.79,413.89,414.75,413.46,411.9,411.58,410.85,409.16,408.05,405.93,405.53,407.02,408.83,410.81,411.23,410.23,409.21,408.35,407.98,406.68,405.1,403.56,403.2,405.19,407.14,409.04,409.84,408.88,406.99,406.57,406,404.48,403.57,401.43,400.94,402.16,404.43,406.94,407.6,407.48,404.79,404.1,402.57,401.82,400.17,398.22,397.43,398.93,401.54,402.81,404.03,403.52,401.6,400.4,399.94,398.89,397.32,395.74,395.49,397.3,399.17,401.41,401.98,401.43,399.56,398.18,398.01,396.9,395.27,393.77,393.47,395.48,397.45,398.96,400.06,398.44,397.36,396.94,395.69,394.42,393.03,391.09,391.2,392.61,394.6,395.97,396.96,396.51,394.43,393.42,393.13,391.86,390.3,388.98,389.05,390.25,392.64,393.75,394.33,393.4,392.49,391.96,391.33,389.83,388.69,387.18,386.85,388.53,390.35,392.26,393.24,392.39,391.02,390.08,388.55,387.48,386.05,384.32,384.64,386.06,388.05,389.6,390.15,389.54,388.5,387.1,386.63,385.08,383.98,382.75,383.05,384.05,386.22,388.02,388.48,386.74,385.8,385.81,385.04,383.58,382.32,380.83,380.83,381.81,384.42,385.85,386.38,386.2,384.31,383.68,382.55,381.63,380.11,379.03,378.77,380.44,382.25,384,384.89,384.33,382.53,381.98,381.33,379.93,378.27,376.77,376.39,378.63,380.63,382.05,382.21,382.01,380.07,379.56,378.29,377.39,375.79,374.17,373.99,375.77,377.71,379.49,380.56,380.44,378.33,377.31,376.73,375.63,374.29,372.94,372.92,374.42,376.54,378.07,378.28,377.58,376.04,375.55,374.61,373.71,372.01,370.18,370.63,371.41,373.95,375.34,375.48,374.77,373.44,373,372.36,371.15,369.6,368.02,367.88,369.47,371.54,373.23,373.94,372.78,372.04,371.42,370.2,369.44,368.2,366.64,366.53,368.03,370.02,371.6,371.74,371.57,370.42,369.37,369.05,367.91,366.58,365.04,364.54,366.83,369.17,370.25,370.9,371.04,369.49,368.77,368.05,366.87,365.36,364.14,363.8,365.67,367.53,368.77,369.19,368.5,367.2,366.04,365.22,364.17,362.32,360.67,360.08,362.39,364.36,365.52,366.68,366.23,364.44,363.87,363.06,362.21,360.64,359.48,359.32,361.35,363.52,364.84,365.29,364.58,363.89,363.11,361.91,360.56,359.42,357.62,357.91,359.31,361.75,363.11,363.64,363.3,361.48,360.84,359.81,358.87,357.42,355.83,355.68,357.31,359.38,360.78,361.51,361.09,359.79,358.73,358.19,356.62,355.15,353.8,353.5,355.33,357.38,359.4,360.08,359.26,358.18,356.97,356.5,355.2,353.96,353.11,352.81,354.8,356.82,359.05,359.46,358.95,357.61,356.52,355.79,354.79,353.55,352.02,351.95,353.81,355.98,358.04,359.14,358.4,356.96,355.55,354.53,354.02,352.64,350.99,350.77,352.71,354.62,356.04,356.96,356,355.19,354.5,353.46,352.32,351.1,349.79,349.61,351.47,353.7,354.92,355.47,355.21,353.48,352.86,352.55,351.12,349.85,348.66,348.5,350.19,352.14,353.55,353.97,353.33,351.96,351.47,350.16,348.69,347.54,346.09,346.44,348.08,349.5,351.25,351.84,350.97,349.41,348.47,348,346.88,345.64,344.16,344.83,345.88,347.92,349.54,350.19,349.53,347.83,346.93,346.28,345.53,344.21,342.78,343.06,344.64,346.54,348.24,348.92,348.34,347.43,346.01,344.99,344.25,343.02,341.4,341.13,343.34,345.47,346.88,347.52,347.15,345.38,344.62,343.82,342.99,341.16,340.01,339.89,342.4,344,345.34,345.77,344.96,343.12,342.54,341.4,340.51,339.28,337.88,338,339.83,342.07,343.37,344.16,343.59,342.72,341.63,340.77,339.63,338.38,336.88,336.71,338.45,340.5,342.27,342.93,342.52,341.4,340.5,339.25,338.23,337.12,336.03,335.9,337.61,339.57,341.19,341.48,340.78,340.09,338.37,338.03,336.74,335.3,333.87,333.93,336.1,337.74,339.3,339.48,338.89,337.97,336.77,336.24,334.96,333.93,332.56,332.77,334.69,336.55,337.91,338.02,337.76,336.65,335.4,334.98,333.86,332.41,331.17,331.6,332.76,334.93,336.28,336.76,336.08,334.71,333.43,332.94,331.69,330.32,328.95,329.31,330.95,333.06,334.34,334.89,334.59,333.5,332.58,331.76,330.77,329.5,328.35,328.56,330.06,331.91,333.62,333.98,333.32,332.05,331.41,330.41,329.58,328.46,327.38,327.44,329.4,331.18,332.26,333.1,332.65,331.49,330.71,329.36,328.65,328.17,327.19,327.52,329.31,330.87,332.08,332.48,331.5,330.3,329.57,328.55,327.55,326.5,325.2,324.84,326.32,328.04,329.09,330.07,329.72,327.75,327.63,326.77,326.01,324.8,323.56,323.36,325.43,327.36,328.57,328.93,327.78,327.18,326.68,326.17,325.13,324.01,323.07,323.1,324.68,326.34,327.67,328.08,328.13,326.93,325.99,325.06,324.11,322.85,321.78,322.38,323.66,325.88,326.71,327.38,326.66,325.63,324.42,324,322.89,321.32,320.25,320.33,322.11,324.14,325.36,325.57,325.02,323.89,323.15,322.57,321.95,320.73,319.39,319.25,320.92,322.54,324.09,325,324.41,323.03,322.5,322.33,321.02,319.78,318.1,318.64,320.36,322.37,323.75,324.08,323.7,322.39,321.6,320.62,319.42,318.87,317.3,317.82,318.87,321.21,321.88,322.17,322.13,320.89,320.44,319.44,318.71,317.68,316.87,316.71,318.69,320.44,321.9,322.25,319.57,318.35,317.07,315.99,316.21,317.77,319.74,321.49,322.24,321.38,319.86,319.07,318.74,317.7,316.69,315.42,316.24,317.4,319.62,320.62,321.02,320.57,319.68,318.55,317.94,317.01,316.1,315.31,314.99,316.79,318.56,319.77,320.58,319.48,318.54,317.7,316.89,316.19,315,313.83,314.17,315.9,318.18,319.59,320.03,319.03,317.58,316.98,316.43,315.58,314.81,313.33,313.84,314.79,316.54,318.15,318.29,317.72,316.65,316.49,315.58,314.67,313.33,313.21,314.93,315.87,317.51,317.45,315.71]},"columns":[{"id":"date","name":"Date","type":"Date","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["October 2024","September 2024","August 2024","July 2024","June 2024","May 2024","April 2024","March 2024","February 2024","January 2024","December 2023","November 2023","October 2023","September 2023","August 2023","July 2023","June 2023","May 2023","April 2023","March 2023","February 2023","January 2023","December 2022","November 2022","October 2022","September 2022","August 2022","July 2022","June 2022","May 2022","April 2022","March 2022","February 2022","January 2022","December 2021","November 2021","October 2021","September 2021","August 2021","July 2021","June 2021","May 2021","April 2021","March 2021","February 2021","January 2021","December 2020","November 2020","October 2020","September 2020","August 2020","July 2020","June 2020","May 2020","April 2020","March 2020","February 2020","January 2020","December 2019","November 2019","October 2019","September 2019","August 2019","July 2019","June 2019","May 2019","April 2019","March 2019","February 2019","January 2019","December 2018","November 2018","October 2018","September 2018","August 2018","July 2018","June 2018","May 2018","April 2018","March 2018","February 2018","January 2018","December 2017","November 2017","October 2017","September 2017","August 2017","July 2017","June 2017","May 2017","April 2017","March 2017","February 2017","January 2017","December 2016","November 2016","October 2016","September 2016","August 2016","July 2016","June 2016","May 2016","April 2016","March 2016","February 2016","January 2016","December 2015","November 2015","October 2015","September 2015","August 2015","July 2015","June 2015","May 2015","April 2015","March 2015","February 2015","January 2015","December 2014","November 2014","October 2014","September 2014","August 2014","July 2014","June 2014","May 2014","April 2014","March 2014","February 2014","January 2014","December 2013","November 2013","October 2013","September 2013","August 2013","July 2013","June 2013","May 2013","April 2013","March 2013","February 2013","January 2013","December 2012","November 2012","October 2012","September 2012","August 2012","July 2012","June 2012","May 2012","April 2012","March 2012","February 2012","January 2012","December 2011","November 2011","October 2011","September 2011","August 2011","July 2011","June 2011","May 2011","April 2011","March 2011","February 2011","January 2011","December 2010","November 2010","October 2010","September 2010","August 2010","July 2010","June 2010","May 2010","April 2010","March 2010","February 2010","January 2010","December 2009","November 2009","October 2009","September 2009","August 2009","July 2009","June 2009","May 2009","April 2009","March 2009","February 2009","January 2009","December 2008","November 2008","October 2008","September 2008","August 2008","July 2008","June 2008","May 2008","April 2008","March 2008","February 2008","January 2008","December 2007","November 2007","October 2007","September 2007","August 2007","July 2007","June 2007","May 2007","April 2007","March 2007","February 2007","January 2007","December 2006","November 2006","October 2006","September 2006","August 2006","July 2006","June 2006","May 2006","April 2006","March 2006","February 2006","January 2006","December 2005","November 2005","October 2005","September 2005","August 2005","July 2005","June 2005","May 2005","April 2005","March 2005","February 2005","January 2005","December 2004","November 2004","October 2004","September 2004","August 2004","July 2004","June 2004","May 2004","April 2004","March 2004","February 2004","January 2004","December 2003","November 2003","October 2003","September 2003","August 2003","July 2003","June 2003","May 2003","April 2003","March 2003","February 2003","January 2003","December 2002","November 2002","October 2002","September 2002","August 2002","July 2002","June 2002","May 2002","April 2002","March 2002","February 2002","January 2002","December 2001","November 2001","October 2001","September 2001","August 2001","July 2001","June 2001","May 2001","April 2001","March 2001","February 2001","January 2001","December 2000","November 2000","October 2000","September 2000","August 2000","July 2000","June 2000","May 2000","April 2000","March 2000","February 2000","January 2000","December 1999","November 1999","October 1999","September 1999","August 1999","July 1999","June 1999","May 1999","April 1999","March 1999","February 1999","January 1999","December 1998","November 1998","October 1998","September 1998","August 1998","July 1998","June 1998","May 1998","April 1998","March 1998","February 1998","January 1998","December 1997","November 1997","October 1997","September 1997","August 1997","July 1997","June 1997","May 1997","April 1997","March 1997","February 1997","January 1997","December 1996","November 1996","October 1996","September 1996","August 1996","July 1996","June 1996","May 1996","April 1996","March 1996","February 1996","January 1996","December 1995","November 1995","October 1995","September 1995","August 1995","July 1995","June 1995","May 1995","April 1995","March 1995","February 1995","January 1995","December 1994","November 1994","October 1994","September 1994","August 1994","July 1994","June 1994","May 1994","April 1994","March 1994","February 1994","January 1994","December 1993","November 1993","October 1993","September 1993","August 1993","July 1993","June 1993","May 1993","April 1993","March 1993","February 1993","January 1993","December 1992","November 1992","October 1992","September 1992","August 1992","July 1992","June 1992","May 1992","April 1992","March 1992","February 1992","January 1992","December 1991","November 1991","October 1991","September 1991","August 1991","July 1991","June 1991","May 1991","April 1991","March 1991","February 1991","January 1991","December 1990","November 1990","October 1990","September 1990","August 1990","July 1990","June 1990","May 1990","April 1990","March 1990","February 1990","January 1990","December 1989","November 1989","October 1989","September 1989","August 1989","July 1989","June 1989","May 1989","April 1989","March 1989","February 1989","January 1989","December 1988","November 1988","October 1988","September 1988","August 1988","July 1988","June 1988","May 1988","April 1988","March 1988","February 1988","January 1988","December 1987","November 1987","October 1987","September 1987","August 1987","July 1987","June 1987","May 1987","April 1987","March 1987","February 1987","January 1987","December 1986","November 1986","October 1986","September 1986","August 1986","July 1986","June 1986","May 1986","April 1986","March 1986","February 1986","January 1986","December 1985","November 1985","October 1985","September 1985","August 1985","July 1985","June 1985","May 1985","April 1985","March 1985","February 1985","January 1985","December 1984","November 1984","October 1984","September 1984","August 1984","July 1984","June 1984","May 1984","April 1984","March 1984","February 1984","January 1984","December 1983","November 1983","October 1983","September 1983","August 1983","July 1983","June 1983","May 1983","April 1983","March 1983","February 1983","January 1983","December 1982","November 1982","October 1982","September 1982","August 1982","July 1982","June 1982","May 1982","April 1982","March 1982","February 1982","January 1982","December 1981","November 1981","October 1981","September 1981","August 1981","July 1981","June 1981","May 1981","April 1981","March 1981","February 1981","January 1981","December 1980","November 1980","October 1980","September 1980","August 1980","July 1980","June 1980","May 1980","April 1980","March 1980","February 1980","January 1980","December 1979","November 1979","October 1979","September 1979","August 1979","July 1979","June 1979","May 1979","April 1979","March 1979","February 1979","January 1979","December 1978","November 1978","October 1978","September 1978","August 1978","July 1978","June 1978","May 1978","April 1978","March 1978","February 1978","January 1978","December 1977","November 1977","October 1977","September 1977","August 1977","July 1977","June 1977","May 1977","April 1977","March 1977","February 1977","January 1977","December 1976","November 1976","October 1976","September 1976","August 1976","July 1976","June 1976","May 1976","April 1976","March 1976","February 1976","January 1976","December 1975","November 1975","October 1975","September 1975","August 1975","July 1975","June 1975","May 1975","April 1975","March 1975","February 1975","January 1975","December 1974","November 1974","October 1974","September 1974","August 1974","July 1974","June 1974","May 1974","April 1974","March 1974","February 1974","January 1974","December 1973","November 1973","October 1973","September 1973","August 1973","July 1973","June 1973","May 1973","April 1973","March 1973","February 1973","January 1973","December 1972","November 1972","October 1972","September 1972","August 1972","July 1972","June 1972","May 1972","April 1972","March 1972","February 1972","January 1972","December 1971","November 1971","October 1971","September 1971","August 1971","July 1971","June 1971","May 1971","April 1971","March 1971","February 1971","January 1971","December 1970","November 1970","October 1970","September 1970","August 1970","July 1970","June 1970","May 1970","April 1970","March 1970","February 1970","January 1970","December 1969","November 1969","October 1969","September 1969","August 1969","July 1969","June 1969","May 1969","April 1969","March 1969","February 1969","January 1969","December 1968","November 1968","October 1968","September 1968","August 1968","July 1968","June 1968","May 1968","April 1968","March 1968","February 1968","January 1968","December 1967","November 1967","October 1967","September 1967","August 1967","July 1967","June 1967","May 1967","April 1967","March 1967","February 1967","January 1967","December 1966","November 1966","October 1966","September 1966","August 1966","July 1966","June 1966","May 1966","April 1966","March 1966","February 1966","January 1966","December 1965","November 1965","October 1965","September 1965","August 1965","July 1965","June 1965","May 1965","April 1965","March 1965","February 1965","January 1965","December 1964","November 1964","October 1964","September 1964","August 1964","July 1964","June 1964","May 1964","January 1964","December 1963","November 1963","October 1963","September 1963","August 1963","July 1963","June 1963","May 1963","April 1963","March 1963","February 1963","January 1963","December 1962","November 1962","October 1962","September 1962","August 1962","July 1962","June 1962","May 1962","April 1962","March 1962","February 1962","January 1962","December 1961","November 1961","October 1961","September 1961","August 1961","July 1961","June 1961","May 1961","April 1961","March 1961","February 1961","January 1961","December 1960","November 1960","October 1960","September 1960","August 1960","July 1960","June 1960","May 1960","April 1960","March 1960","February 1960","January 1960","December 1959","November 1959","October 1959","September 1959","August 1959","July 1959","June 1959","May 1959","April 1959","March 1959","February 1959","January 1959","December 1958","November 1958","September 1958","August 1958","July 1958","May 1958","April 1958","March 1958"],"html":true,"align":"right","headerStyle":{"font-weight":"normal"}},{"id":"average","name":"CO₂ (ppm)","type":"numeric","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","html":true,"align":"right","headerStyle":{"font-weight":"normal"}}],"defaultPageSize":10,"showPageSizeOptions":false,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPagination":true,"showPageInfo":true,"minRows":1,"height":"auto","theme":{"color":"#333333","backgroundColor":"#FFFFFF","stripedColor":"rgba(128,128,128,0.05)","style":{"fontFamily":"system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"},"tableStyle":{"borderTopStyle":"solid","borderTopWidth":"2px","borderTopColor":"#D3D3D3"},"headerStyle":{"borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"}},"elementId":"rhdomdbtyg","dataKey":"6bfdee2e60da2873aabaab43a8427715"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.0.style","tag.attribs.columns.1.style"],"jsHooks":[]}</script>
+<script type="application/json" data-for="kawykmiaxj">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"date":["2024-10-15","2024-09-16","2024-08-16","2024-07-16","2024-06-16","2024-05-16","2024-04-15","2024-03-15","2024-02-16","2024-01-16","2023-12-16","2023-11-16","2023-10-15","2023-09-15","2023-08-15","2023-07-16","2023-06-16","2023-05-16","2023-04-16","2023-03-15","2023-02-15","2023-01-16","2022-12-16","2022-11-16","2022-10-15","2022-09-15","2022-08-15","2022-07-16","2022-06-16","2022-05-16","2022-04-16","2022-03-15","2022-02-15","2022-01-16","2021-12-16","2021-11-16","2021-10-15","2021-09-15","2021-08-15","2021-07-16","2021-06-16","2021-05-16","2021-04-16","2021-03-15","2021-02-15","2021-01-16","2020-12-16","2020-11-15","2020-10-15","2020-09-16","2020-08-16","2020-07-16","2020-06-16","2020-05-16","2020-04-15","2020-03-15","2020-02-16","2020-01-16","2019-12-16","2019-11-16","2019-10-15","2019-09-15","2019-08-15","2019-07-16","2019-06-16","2019-05-16","2019-04-16","2019-03-15","2019-02-15","2019-01-16","2018-12-16","2018-11-16","2018-10-15","2018-09-15","2018-08-15","2018-07-16","2018-06-16","2018-05-16","2018-04-16","2018-03-15","2018-02-15","2018-01-16","2017-12-16","2017-11-16","2017-10-15","2017-09-15","2017-08-15","2017-07-16","2017-06-16","2017-05-16","2017-04-16","2017-03-15","2017-02-15","2017-01-16","2016-12-16","2016-11-15","2016-10-15","2016-09-16","2016-08-16","2016-07-16","2016-06-16","2016-05-16","2016-04-15","2016-03-15","2016-02-16","2016-01-16","2015-12-16","2015-11-16","2015-10-15","2015-09-15","2015-08-15","2015-07-16","2015-06-16","2015-05-16","2015-04-16","2015-03-15","2015-02-15","2015-01-16","2014-12-16","2014-11-16","2014-10-15","2014-09-15","2014-08-15","2014-07-16","2014-06-16","2014-05-16","2014-04-16","2014-03-15","2014-02-15","2014-01-16","2013-12-16","2013-11-16","2013-10-15","2013-09-15","2013-08-15","2013-07-16","2013-06-16","2013-05-16","2013-04-16","2013-03-15","2013-02-15","2013-01-16","2012-12-16","2012-11-15","2012-10-15","2012-09-16","2012-08-16","2012-07-16","2012-06-16","2012-05-16","2012-04-15","2012-03-15","2012-02-16","2012-01-16","2011-12-16","2011-11-16","2011-10-15","2011-09-15","2011-08-15","2011-07-16","2011-06-16","2011-05-16","2011-04-16","2011-03-15","2011-02-15","2011-01-16","2010-12-16","2010-11-16","2010-10-15","2010-09-15","2010-08-15","2010-07-16","2010-06-16","2010-05-16","2010-04-16","2010-03-15","2010-02-15","2010-01-16","2009-12-16","2009-11-16","2009-10-15","2009-09-15","2009-08-15","2009-07-16","2009-06-16","2009-05-16","2009-04-16","2009-03-15","2009-02-15","2009-01-16","2008-12-16","2008-11-15","2008-10-15","2008-09-16","2008-08-16","2008-07-16","2008-06-16","2008-05-16","2008-04-15","2008-03-15","2008-02-16","2008-01-16","2007-12-16","2007-11-16","2007-10-15","2007-09-15","2007-08-15","2007-07-16","2007-06-16","2007-05-16","2007-04-16","2007-03-15","2007-02-15","2007-01-16","2006-12-16","2006-11-16","2006-10-15","2006-09-15","2006-08-15","2006-07-16","2006-06-16","2006-05-16","2006-04-16","2006-03-15","2006-02-15","2006-01-16","2005-12-16","2005-11-16","2005-10-15","2005-09-15","2005-08-15","2005-07-16","2005-06-16","2005-05-16","2005-04-16","2005-03-15","2005-02-15","2005-01-16","2004-12-16","2004-11-15","2004-10-15","2004-09-16","2004-08-16","2004-07-16","2004-06-16","2004-05-16","2004-04-15","2004-03-15","2004-02-16","2004-01-16","2003-12-16","2003-11-16","2003-10-15","2003-09-15","2003-08-15","2003-07-16","2003-06-16","2003-05-16","2003-04-16","2003-03-15","2003-02-15","2003-01-16","2002-12-16","2002-11-16","2002-10-15","2002-09-15","2002-08-15","2002-07-16","2002-06-16","2002-05-16","2002-04-16","2002-03-15","2002-02-15","2002-01-16","2001-12-16","2001-11-16","2001-10-15","2001-09-15","2001-08-15","2001-07-16","2001-06-16","2001-05-16","2001-04-16","2001-03-15","2001-02-15","2001-01-16","2000-12-16","2000-11-15","2000-10-15","2000-09-16","2000-08-16","2000-07-16","2000-06-16","2000-05-16","2000-04-15","2000-03-15","2000-02-16","2000-01-16","1999-12-16","1999-11-16","1999-10-15","1999-09-15","1999-08-15","1999-07-16","1999-06-16","1999-05-16","1999-04-16","1999-03-15","1999-02-15","1999-01-16","1998-12-16","1998-11-16","1998-10-15","1998-09-15","1998-08-15","1998-07-16","1998-06-16","1998-05-16","1998-04-16","1998-03-15","1998-02-15","1998-01-16","1997-12-16","1997-11-16","1997-10-15","1997-09-15","1997-08-15","1997-07-16","1997-06-16","1997-05-16","1997-04-16","1997-03-15","1997-02-15","1997-01-16","1996-12-16","1996-11-15","1996-10-15","1996-09-16","1996-08-16","1996-07-16","1996-06-16","1996-05-16","1996-04-15","1996-03-15","1996-02-16","1996-01-16","1995-12-16","1995-11-16","1995-10-15","1995-09-15","1995-08-15","1995-07-16","1995-06-16","1995-05-16","1995-04-16","1995-03-15","1995-02-15","1995-01-16","1994-12-16","1994-11-16","1994-10-15","1994-09-15","1994-08-15","1994-07-16","1994-06-16","1994-05-16","1994-04-16","1994-03-15","1994-02-15","1994-01-16","1993-12-16","1993-11-16","1993-10-15","1993-09-15","1993-08-15","1993-07-16","1993-06-16","1993-05-16","1993-04-16","1993-03-15","1993-02-15","1993-01-16","1992-12-16","1992-11-15","1992-10-15","1992-09-16","1992-08-16","1992-07-16","1992-06-16","1992-05-16","1992-04-15","1992-03-15","1992-02-16","1992-01-16","1991-12-16","1991-11-16","1991-10-15","1991-09-15","1991-08-15","1991-07-16","1991-06-16","1991-05-16","1991-04-16","1991-03-15","1991-02-15","1991-01-16","1990-12-16","1990-11-16","1990-10-15","1990-09-15","1990-08-15","1990-07-16","1990-06-16","1990-05-16","1990-04-16","1990-03-15","1990-02-15","1990-01-16","1989-12-16","1989-11-16","1989-10-15","1989-09-15","1989-08-15","1989-07-16","1989-06-16","1989-05-16","1989-04-16","1989-03-15","1989-02-15","1989-01-16","1988-12-16","1988-11-15","1988-10-15","1988-09-16","1988-08-16","1988-07-16","1988-06-16","1988-05-16","1988-04-15","1988-03-15","1988-02-16","1988-01-16","1987-12-16","1987-11-16","1987-10-15","1987-09-15","1987-08-15","1987-07-16","1987-06-16","1987-05-16","1987-04-16","1987-03-15","1987-02-15","1987-01-16","1986-12-16","1986-11-16","1986-10-15","1986-09-15","1986-08-15","1986-07-16","1986-06-16","1986-05-16","1986-04-16","1986-03-15","1986-02-15","1986-01-16","1985-12-16","1985-11-16","1985-10-15","1985-09-15","1985-08-15","1985-07-16","1985-06-16","1985-05-16","1985-04-16","1985-03-15","1985-02-15","1985-01-16","1984-12-16","1984-11-15","1984-10-15","1984-09-16","1984-08-16","1984-07-16","1984-06-16","1984-05-16","1984-04-15","1984-03-15","1984-02-16","1984-01-16","1983-12-16","1983-11-16","1983-10-15","1983-09-15","1983-08-15","1983-07-16","1983-06-16","1983-05-16","1983-04-16","1983-03-15","1983-02-15","1983-01-16","1982-12-16","1982-11-16","1982-10-15","1982-09-15","1982-08-15","1982-07-16","1982-06-16","1982-05-16","1982-04-16","1982-03-15","1982-02-15","1982-01-16","1981-12-16","1981-11-16","1981-10-15","1981-09-15","1981-08-15","1981-07-16","1981-06-16","1981-05-16","1981-04-16","1981-03-15","1981-02-15","1981-01-16","1980-12-16","1980-11-15","1980-10-15","1980-09-16","1980-08-16","1980-07-16","1980-06-16","1980-05-16","1980-04-15","1980-03-15","1980-02-16","1980-01-16","1979-12-16","1979-11-16","1979-10-15","1979-09-15","1979-08-15","1979-07-16","1979-06-16","1979-05-16","1979-04-16","1979-03-15","1979-02-15","1979-01-16","1978-12-16","1978-11-16","1978-10-15","1978-09-15","1978-08-15","1978-07-16","1978-06-16","1978-05-16","1978-04-16","1978-03-15","1978-02-15","1978-01-16","1977-12-16","1977-11-16","1977-10-15","1977-09-15","1977-08-15","1977-07-16","1977-06-16","1977-05-16","1977-04-16","1977-03-15","1977-02-15","1977-01-16","1976-12-16","1976-11-15","1976-10-15","1976-09-16","1976-08-16","1976-07-16","1976-06-16","1976-05-16","1976-04-15","1976-03-15","1976-02-16","1976-01-16","1975-12-16","1975-11-16","1975-10-15","1975-09-15","1975-08-15","1975-07-16","1975-06-16","1975-05-16","1975-04-16","1975-03-15","1975-02-15","1975-01-16","1974-12-16","1974-11-16","1974-10-15","1974-09-15","1974-08-15","1974-07-16","1974-06-16","1974-05-16","1974-04-16","1974-03-15","1974-02-15","1974-01-16","1973-12-16","1973-11-16","1973-10-15","1973-09-15","1973-08-15","1973-07-16","1973-06-16","1973-05-16","1973-04-16","1973-03-15","1973-02-15","1973-01-16","1972-12-16","1972-11-15","1972-10-15","1972-09-16","1972-08-16","1972-07-16","1972-06-16","1972-05-16","1972-04-15","1972-03-15","1972-02-16","1972-01-16","1971-12-16","1971-11-16","1971-10-15","1971-09-15","1971-08-15","1971-07-16","1971-06-16","1971-05-16","1971-04-16","1971-03-15","1971-02-15","1971-01-16","1970-12-16","1970-11-16","1970-10-15","1970-09-15","1970-08-15","1970-07-16","1970-06-16","1970-05-16","1970-04-16","1970-03-15","1970-02-15","1970-01-16","1969-12-16","1969-11-16","1969-10-15","1969-09-15","1969-08-15","1969-07-16","1969-06-16","1969-05-16","1969-04-16","1969-03-15","1969-02-15","1969-01-16","1968-12-16","1968-11-15","1968-10-15","1968-09-16","1968-08-16","1968-07-16","1968-06-16","1968-05-16","1968-04-15","1968-03-15","1968-02-16","1968-01-16","1967-12-16","1967-11-16","1967-10-15","1967-09-15","1967-08-15","1967-07-16","1967-06-16","1967-05-16","1967-04-16","1967-03-15","1967-02-15","1967-01-16","1966-12-16","1966-11-16","1966-10-15","1966-09-15","1966-08-15","1966-07-16","1966-06-16","1966-05-16","1966-04-16","1966-03-15","1966-02-15","1966-01-16","1965-12-16","1965-11-16","1965-10-15","1965-09-15","1965-08-15","1965-07-16","1965-06-16","1965-05-16","1965-04-16","1965-03-15","1965-02-15","1965-01-16","1964-12-16","1964-11-15","1964-10-15","1964-09-16","1964-08-16","1964-07-16","1964-06-16","1964-05-16","1964-01-16","1963-12-16","1963-11-16","1963-10-15","1963-09-15","1963-08-15","1963-07-16","1963-06-16","1963-05-16","1963-04-16","1963-03-15","1963-02-15","1963-01-16","1962-12-16","1962-11-16","1962-10-15","1962-09-15","1962-08-15","1962-07-16","1962-06-16","1962-05-16","1962-04-16","1962-03-15","1962-02-15","1962-01-16","1961-12-16","1961-11-16","1961-10-15","1961-09-15","1961-08-15","1961-07-16","1961-06-16","1961-05-16","1961-04-16","1961-03-15","1961-02-15","1961-01-16","1960-12-16","1960-11-15","1960-10-15","1960-09-16","1960-08-16","1960-07-16","1960-06-16","1960-05-16","1960-04-15","1960-03-15","1960-02-16","1960-01-16","1959-12-16","1959-11-16","1959-10-15","1959-09-15","1959-08-15","1959-07-16","1959-06-16","1959-05-16","1959-04-16","1959-03-15","1959-02-15","1959-01-16","1958-12-16","1958-11-16","1958-09-15","1958-08-15","1958-07-16","1958-05-16","1958-04-16","1958-03-15"],"average":[422.05,421.59,422.7,425.4,426.62,426.7,426.3,425.22,424.34,422.62,421.65,420.11,418.41,418.06,419.56,421.62,423.39,423.78,422.73,420.51,420.33,419.13,418.46,417.03,415.31,415.42,416.75,418.71,420.68,420.78,420.01,418.45,418.99,418.01,416.43,414.81,413.52,412.93,414.38,416.66,418.7,418.95,418.26,417.1,416.47,415.15,413.88,412.89,411.12,411.17,412.52,414.43,416.29,417.16,416.11,414.44,414.04,413.32,411.81,410.16,408.4,408.48,410.02,411.79,413.89,414.75,413.46,411.9,411.58,410.85,409.16,408.05,405.93,405.53,407.02,408.83,410.81,411.23,410.23,409.21,408.35,407.98,406.68,405.1,403.56,403.2,405.19,407.14,409.04,409.84,408.88,406.99,406.57,406,404.48,403.57,401.43,400.94,402.16,404.43,406.94,407.6,407.48,404.79,404.1,402.57,401.82,400.17,398.22,397.43,398.93,401.54,402.81,404.03,403.52,401.6,400.4,399.94,398.89,397.32,395.74,395.49,397.3,399.17,401.41,401.98,401.43,399.56,398.18,398.01,396.9,395.27,393.77,393.47,395.48,397.45,398.96,400.06,398.44,397.36,396.94,395.69,394.42,393.03,391.09,391.2,392.61,394.6,395.97,396.96,396.51,394.43,393.42,393.13,391.86,390.3,388.98,389.05,390.25,392.64,393.75,394.33,393.4,392.49,391.96,391.33,389.83,388.69,387.18,386.85,388.53,390.35,392.26,393.24,392.39,391.02,390.08,388.55,387.48,386.05,384.32,384.64,386.06,388.05,389.6,390.15,389.54,388.5,387.1,386.63,385.08,383.98,382.75,383.05,384.05,386.22,388.02,388.48,386.74,385.8,385.81,385.04,383.58,382.32,380.83,380.83,381.81,384.42,385.85,386.38,386.2,384.31,383.68,382.55,381.63,380.11,379.03,378.77,380.44,382.25,384,384.89,384.33,382.53,381.98,381.33,379.93,378.27,376.77,376.39,378.63,380.63,382.05,382.21,382.01,380.07,379.56,378.29,377.39,375.79,374.17,373.99,375.77,377.71,379.49,380.56,380.44,378.33,377.31,376.73,375.63,374.29,372.94,372.92,374.42,376.54,378.07,378.28,377.58,376.04,375.55,374.61,373.71,372.01,370.18,370.63,371.41,373.95,375.34,375.48,374.77,373.44,373,372.36,371.15,369.6,368.02,367.88,369.47,371.54,373.23,373.94,372.78,372.04,371.42,370.2,369.44,368.2,366.64,366.53,368.03,370.02,371.6,371.74,371.57,370.42,369.37,369.05,367.91,366.58,365.04,364.54,366.83,369.17,370.25,370.9,371.04,369.49,368.77,368.05,366.87,365.36,364.14,363.8,365.67,367.53,368.77,369.19,368.5,367.2,366.04,365.22,364.17,362.32,360.67,360.08,362.39,364.36,365.52,366.68,366.23,364.44,363.87,363.06,362.21,360.64,359.48,359.32,361.35,363.52,364.84,365.29,364.58,363.89,363.11,361.91,360.56,359.42,357.62,357.91,359.31,361.75,363.11,363.64,363.3,361.48,360.84,359.81,358.87,357.42,355.83,355.68,357.31,359.38,360.78,361.51,361.09,359.79,358.73,358.19,356.62,355.15,353.8,353.5,355.33,357.38,359.4,360.08,359.26,358.18,356.97,356.5,355.2,353.96,353.11,352.81,354.8,356.82,359.05,359.46,358.95,357.61,356.52,355.79,354.79,353.55,352.02,351.95,353.81,355.98,358.04,359.14,358.4,356.96,355.55,354.53,354.02,352.64,350.99,350.77,352.71,354.62,356.04,356.96,356,355.19,354.5,353.46,352.32,351.1,349.79,349.61,351.47,353.7,354.92,355.47,355.21,353.48,352.86,352.55,351.12,349.85,348.66,348.5,350.19,352.14,353.55,353.97,353.33,351.96,351.47,350.16,348.69,347.54,346.09,346.44,348.08,349.5,351.25,351.84,350.97,349.41,348.47,348,346.88,345.64,344.16,344.83,345.88,347.92,349.54,350.19,349.53,347.83,346.93,346.28,345.53,344.21,342.78,343.06,344.64,346.54,348.24,348.92,348.34,347.43,346.01,344.99,344.25,343.02,341.4,341.13,343.34,345.47,346.88,347.52,347.15,345.38,344.62,343.82,342.99,341.16,340.01,339.89,342.4,344,345.34,345.77,344.96,343.12,342.54,341.4,340.51,339.28,337.88,338,339.83,342.07,343.37,344.16,343.59,342.72,341.63,340.77,339.63,338.38,336.88,336.71,338.45,340.5,342.27,342.93,342.52,341.4,340.5,339.25,338.23,337.12,336.03,335.9,337.61,339.57,341.19,341.48,340.78,340.09,338.37,338.03,336.74,335.3,333.87,333.93,336.1,337.74,339.3,339.48,338.89,337.97,336.77,336.24,334.96,333.93,332.56,332.77,334.69,336.55,337.91,338.02,337.76,336.65,335.4,334.98,333.86,332.41,331.17,331.6,332.76,334.93,336.28,336.76,336.08,334.71,333.43,332.94,331.69,330.32,328.95,329.31,330.95,333.06,334.34,334.89,334.59,333.5,332.58,331.76,330.77,329.5,328.35,328.56,330.06,331.91,333.62,333.98,333.32,332.05,331.41,330.41,329.58,328.46,327.38,327.44,329.4,331.18,332.26,333.1,332.65,331.49,330.71,329.36,328.65,328.17,327.19,327.52,329.31,330.87,332.08,332.48,331.5,330.3,329.57,328.55,327.55,326.5,325.2,324.84,326.32,328.04,329.09,330.07,329.72,327.75,327.63,326.77,326.01,324.8,323.56,323.36,325.43,327.36,328.57,328.93,327.78,327.18,326.68,326.17,325.13,324.01,323.07,323.1,324.68,326.34,327.67,328.08,328.13,326.93,325.99,325.06,324.11,322.85,321.78,322.38,323.66,325.88,326.71,327.38,326.66,325.63,324.42,324,322.89,321.32,320.25,320.33,322.11,324.14,325.36,325.57,325.02,323.89,323.15,322.57,321.95,320.73,319.39,319.25,320.92,322.54,324.09,325,324.41,323.03,322.5,322.33,321.02,319.78,318.1,318.64,320.36,322.37,323.75,324.08,323.7,322.39,321.6,320.62,319.42,318.87,317.3,317.82,318.87,321.21,321.88,322.17,322.13,320.89,320.44,319.44,318.71,317.68,316.87,316.71,318.69,320.44,321.9,322.25,319.57,318.35,317.07,315.99,316.21,317.77,319.74,321.49,322.24,321.38,319.86,319.07,318.74,317.7,316.69,315.42,316.24,317.4,319.62,320.62,321.02,320.57,319.68,318.55,317.94,317.01,316.1,315.31,314.99,316.79,318.56,319.77,320.58,319.48,318.54,317.7,316.89,316.19,315,313.83,314.17,315.9,318.18,319.59,320.03,319.03,317.58,316.98,316.43,315.58,314.81,313.33,313.84,314.79,316.54,318.15,318.29,317.72,316.65,316.49,315.58,314.67,313.33,313.21,314.93,315.87,317.51,317.45,315.71]},"columns":[{"id":"date","name":"Date","type":"Date","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","cell":["October 2024","September 2024","August 2024","July 2024","June 2024","May 2024","April 2024","March 2024","February 2024","January 2024","December 2023","November 2023","October 2023","September 2023","August 2023","July 2023","June 2023","May 2023","April 2023","March 2023","February 2023","January 2023","December 2022","November 2022","October 2022","September 2022","August 2022","July 2022","June 2022","May 2022","April 2022","March 2022","February 2022","January 2022","December 2021","November 2021","October 2021","September 2021","August 2021","July 2021","June 2021","May 2021","April 2021","March 2021","February 2021","January 2021","December 2020","November 2020","October 2020","September 2020","August 2020","July 2020","June 2020","May 2020","April 2020","March 2020","February 2020","January 2020","December 2019","November 2019","October 2019","September 2019","August 2019","July 2019","June 2019","May 2019","April 2019","March 2019","February 2019","January 2019","December 2018","November 2018","October 2018","September 2018","August 2018","July 2018","June 2018","May 2018","April 2018","March 2018","February 2018","January 2018","December 2017","November 2017","October 2017","September 2017","August 2017","July 2017","June 2017","May 2017","April 2017","March 2017","February 2017","January 2017","December 2016","November 2016","October 2016","September 2016","August 2016","July 2016","June 2016","May 2016","April 2016","March 2016","February 2016","January 2016","December 2015","November 2015","October 2015","September 2015","August 2015","July 2015","June 2015","May 2015","April 2015","March 2015","February 2015","January 2015","December 2014","November 2014","October 2014","September 2014","August 2014","July 2014","June 2014","May 2014","April 2014","March 2014","February 2014","January 2014","December 2013","November 2013","October 2013","September 2013","August 2013","July 2013","June 2013","May 2013","April 2013","March 2013","February 2013","January 2013","December 2012","November 2012","October 2012","September 2012","August 2012","July 2012","June 2012","May 2012","April 2012","March 2012","February 2012","January 2012","December 2011","November 2011","October 2011","September 2011","August 2011","July 2011","June 2011","May 2011","April 2011","March 2011","February 2011","January 2011","December 2010","November 2010","October 2010","September 2010","August 2010","July 2010","June 2010","May 2010","April 2010","March 2010","February 2010","January 2010","December 2009","November 2009","October 2009","September 2009","August 2009","July 2009","June 2009","May 2009","April 2009","March 2009","February 2009","January 2009","December 2008","November 2008","October 2008","September 2008","August 2008","July 2008","June 2008","May 2008","April 2008","March 2008","February 2008","January 2008","December 2007","November 2007","October 2007","September 2007","August 2007","July 2007","June 2007","May 2007","April 2007","March 2007","February 2007","January 2007","December 2006","November 2006","October 2006","September 2006","August 2006","July 2006","June 2006","May 2006","April 2006","March 2006","February 2006","January 2006","December 2005","November 2005","October 2005","September 2005","August 2005","July 2005","June 2005","May 2005","April 2005","March 2005","February 2005","January 2005","December 2004","November 2004","October 2004","September 2004","August 2004","July 2004","June 2004","May 2004","April 2004","March 2004","February 2004","January 2004","December 2003","November 2003","October 2003","September 2003","August 2003","July 2003","June 2003","May 2003","April 2003","March 2003","February 2003","January 2003","December 2002","November 2002","October 2002","September 2002","August 2002","July 2002","June 2002","May 2002","April 2002","March 2002","February 2002","January 2002","December 2001","November 2001","October 2001","September 2001","August 2001","July 2001","June 2001","May 2001","April 2001","March 2001","February 2001","January 2001","December 2000","November 2000","October 2000","September 2000","August 2000","July 2000","June 2000","May 2000","April 2000","March 2000","February 2000","January 2000","December 1999","November 1999","October 1999","September 1999","August 1999","July 1999","June 1999","May 1999","April 1999","March 1999","February 1999","January 1999","December 1998","November 1998","October 1998","September 1998","August 1998","July 1998","June 1998","May 1998","April 1998","March 1998","February 1998","January 1998","December 1997","November 1997","October 1997","September 1997","August 1997","July 1997","June 1997","May 1997","April 1997","March 1997","February 1997","January 1997","December 1996","November 1996","October 1996","September 1996","August 1996","July 1996","June 1996","May 1996","April 1996","March 1996","February 1996","January 1996","December 1995","November 1995","October 1995","September 1995","August 1995","July 1995","June 1995","May 1995","April 1995","March 1995","February 1995","January 1995","December 1994","November 1994","October 1994","September 1994","August 1994","July 1994","June 1994","May 1994","April 1994","March 1994","February 1994","January 1994","December 1993","November 1993","October 1993","September 1993","August 1993","July 1993","June 1993","May 1993","April 1993","March 1993","February 1993","January 1993","December 1992","November 1992","October 1992","September 1992","August 1992","July 1992","June 1992","May 1992","April 1992","March 1992","February 1992","January 1992","December 1991","November 1991","October 1991","September 1991","August 1991","July 1991","June 1991","May 1991","April 1991","March 1991","February 1991","January 1991","December 1990","November 1990","October 1990","September 1990","August 1990","July 1990","June 1990","May 1990","April 1990","March 1990","February 1990","January 1990","December 1989","November 1989","October 1989","September 1989","August 1989","July 1989","June 1989","May 1989","April 1989","March 1989","February 1989","January 1989","December 1988","November 1988","October 1988","September 1988","August 1988","July 1988","June 1988","May 1988","April 1988","March 1988","February 1988","January 1988","December 1987","November 1987","October 1987","September 1987","August 1987","July 1987","June 1987","May 1987","April 1987","March 1987","February 1987","January 1987","December 1986","November 1986","October 1986","September 1986","August 1986","July 1986","June 1986","May 1986","April 1986","March 1986","February 1986","January 1986","December 1985","November 1985","October 1985","September 1985","August 1985","July 1985","June 1985","May 1985","April 1985","March 1985","February 1985","January 1985","December 1984","November 1984","October 1984","September 1984","August 1984","July 1984","June 1984","May 1984","April 1984","March 1984","February 1984","January 1984","December 1983","November 1983","October 1983","September 1983","August 1983","July 1983","June 1983","May 1983","April 1983","March 1983","February 1983","January 1983","December 1982","November 1982","October 1982","September 1982","August 1982","July 1982","June 1982","May 1982","April 1982","March 1982","February 1982","January 1982","December 1981","November 1981","October 1981","September 1981","August 1981","July 1981","June 1981","May 1981","April 1981","March 1981","February 1981","January 1981","December 1980","November 1980","October 1980","September 1980","August 1980","July 1980","June 1980","May 1980","April 1980","March 1980","February 1980","January 1980","December 1979","November 1979","October 1979","September 1979","August 1979","July 1979","June 1979","May 1979","April 1979","March 1979","February 1979","January 1979","December 1978","November 1978","October 1978","September 1978","August 1978","July 1978","June 1978","May 1978","April 1978","March 1978","February 1978","January 1978","December 1977","November 1977","October 1977","September 1977","August 1977","July 1977","June 1977","May 1977","April 1977","March 1977","February 1977","January 1977","December 1976","November 1976","October 1976","September 1976","August 1976","July 1976","June 1976","May 1976","April 1976","March 1976","February 1976","January 1976","December 1975","November 1975","October 1975","September 1975","August 1975","July 1975","June 1975","May 1975","April 1975","March 1975","February 1975","January 1975","December 1974","November 1974","October 1974","September 1974","August 1974","July 1974","June 1974","May 1974","April 1974","March 1974","February 1974","January 1974","December 1973","November 1973","October 1973","September 1973","August 1973","July 1973","June 1973","May 1973","April 1973","March 1973","February 1973","January 1973","December 1972","November 1972","October 1972","September 1972","August 1972","July 1972","June 1972","May 1972","April 1972","March 1972","February 1972","January 1972","December 1971","November 1971","October 1971","September 1971","August 1971","July 1971","June 1971","May 1971","April 1971","March 1971","February 1971","January 1971","December 1970","November 1970","October 1970","September 1970","August 1970","July 1970","June 1970","May 1970","April 1970","March 1970","February 1970","January 1970","December 1969","November 1969","October 1969","September 1969","August 1969","July 1969","June 1969","May 1969","April 1969","March 1969","February 1969","January 1969","December 1968","November 1968","October 1968","September 1968","August 1968","July 1968","June 1968","May 1968","April 1968","March 1968","February 1968","January 1968","December 1967","November 1967","October 1967","September 1967","August 1967","July 1967","June 1967","May 1967","April 1967","March 1967","February 1967","January 1967","December 1966","November 1966","October 1966","September 1966","August 1966","July 1966","June 1966","May 1966","April 1966","March 1966","February 1966","January 1966","December 1965","November 1965","October 1965","September 1965","August 1965","July 1965","June 1965","May 1965","April 1965","March 1965","February 1965","January 1965","December 1964","November 1964","October 1964","September 1964","August 1964","July 1964","June 1964","May 1964","January 1964","December 1963","November 1963","October 1963","September 1963","August 1963","July 1963","June 1963","May 1963","April 1963","March 1963","February 1963","January 1963","December 1962","November 1962","October 1962","September 1962","August 1962","July 1962","June 1962","May 1962","April 1962","March 1962","February 1962","January 1962","December 1961","November 1961","October 1961","September 1961","August 1961","July 1961","June 1961","May 1961","April 1961","March 1961","February 1961","January 1961","December 1960","November 1960","October 1960","September 1960","August 1960","July 1960","June 1960","May 1960","April 1960","March 1960","February 1960","January 1960","December 1959","November 1959","October 1959","September 1959","August 1959","July 1959","June 1959","May 1959","April 1959","March 1959","February 1959","January 1959","December 1958","November 1958","September 1958","August 1958","July 1958","May 1958","April 1958","March 1958"],"html":true,"align":"left","headerStyle":{"font-weight":"normal"}},{"id":"average","name":"CO₂ (ppm)","type":"numeric","minWidth":125,"style":"function(rowInfo, colInfo) {\nconst rowIndex = rowInfo.index + 1\n}","html":true,"align":"right","headerStyle":{"font-weight":"normal"}}],"defaultPageSize":10,"showPageSizeOptions":false,"pageSizeOptions":[10,25,50,100],"paginationType":"numbers","showPagination":true,"showPageInfo":true,"minRows":1,"height":"auto","theme":{"color":"#333333","backgroundColor":"#FFFFFF","stripedColor":"rgba(128,128,128,0.05)","style":{"fontFamily":"system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"},"tableStyle":{"borderTopStyle":"solid","borderTopWidth":"2px","borderTopColor":"#D3D3D3"},"headerStyle":{"borderBottomStyle":"solid","borderBottomWidth":"2px","borderBottomColor":"#D3D3D3"}},"elementId":"kawykmiaxj","dataKey":"d74730f36f77c52a55fb9cca1922b9f3"},"children":[]},"class":"reactR_markup"},"evals":["tag.attribs.columns.0.style","tag.attribs.columns.1.style"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -29517,10 +29521,10 @@ height: 0px !important;
 </section><section id="transform-data" class="level2"><h2 class="anchored" data-anchor-id="transform-data">Transform data</h2>
 <p>The data are transposed and converted to a date before plotting in Observable Plot.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5" data-startfrom="99" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 98;"><span id="cb5-99"><a href="#cb5-99" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> <span class="fu">transpose</span>(df)<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({</span>
-<span id="cb5-100"><a href="#cb5-100" aria-hidden="true" tabindex="-1"></a>  <span class="dt">date</span><span class="op">:</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span></span>
-<span id="cb5-101"><a href="#cb5-101" aria-hidden="true" tabindex="-1"></a>  <span class="dt">average</span><span class="op">:</span> <span class="op">+</span>d<span class="op">.</span><span class="at">average</span></span>
-<span id="cb5-102"><a href="#cb5-102" aria-hidden="true" tabindex="-1"></a>}))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5" data-startfrom="103" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 102;"><span id="cb5-103"><a href="#cb5-103" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> <span class="fu">transpose</span>(df)<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> ({</span>
+<span id="cb5-104"><a href="#cb5-104" aria-hidden="true" tabindex="-1"></a>  <span class="dt">date</span><span class="op">:</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span></span>
+<span id="cb5-105"><a href="#cb5-105" aria-hidden="true" tabindex="-1"></a>  <span class="dt">average</span><span class="op">:</span> <span class="op">+</span>d<span class="op">.</span><span class="at">average</span></span>
+<span id="cb5-106"><a href="#cb5-106" aria-hidden="true" tabindex="-1"></a>}))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="transform-data" class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
@@ -29530,39 +29534,39 @@ height: 0px !important;
 </section><section id="plot-data" class="level2"><h2 class="anchored" data-anchor-id="plot-data">Plot data</h2>
 <p><a href="#fig-co2" class="quarto-xref">Figure 1</a> is the <a href="https://keelingcurve.ucsd.edu/">Keeling Curve</a>, an iconic line chart showing changes in atmospheric levels of carbon dioxide since 1958. CO<sub>2</sub> levels are currently rising at around 2.5 parts per million (ppm) each year.</p>
 <div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="sourceCode cell-code" id="cb6" data-startfrom="117" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 116;"><span id="cb6-117"><a href="#cb6-117" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb6-118"><a href="#cb6-118" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">396</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">640</span><span class="op">,</span></span>
-<span id="cb6-119"><a href="#cb6-119" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
-<span id="cb6-120"><a href="#cb6-120" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
-<span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;&quot;</span><span class="op">,</span></span>
-<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelArrow</span><span class="op">:</span> <span class="kw">null</span></span>
-<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb6-124"><a href="#cb6-124" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
-<span id="cb6-125"><a href="#cb6-125" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">300</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">max</span>(data<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">average</span>)]<span class="op">,</span></span>
-<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a>        <span class="dt">ticks</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span></span>
-<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tickSize</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
-<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tickPadding</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span></span>
-<span id="cb6-129"><a href="#cb6-129" aria-hidden="true" tabindex="-1"></a>    <span class="dt">axis</span><span class="op">:</span> <span class="st">&quot;right&quot;</span><span class="op">,</span></span>
-<span id="cb6-130"><a href="#cb6-130" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
-<span id="cb6-131"><a href="#cb6-131" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;CO₂ concentration (ppm)&quot;</span><span class="op">,</span></span>
-<span id="cb6-132"><a href="#cb6-132" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelArrow</span><span class="op">:</span> <span class="kw">null</span></span>
-<span id="cb6-133"><a href="#cb6-133" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
-<span id="cb6-134"><a href="#cb6-134" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb6-135"><a href="#cb6-135" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">lineY</span>(data<span class="op">,</span> {</span>
-<span id="cb6-136"><a href="#cb6-136" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">&quot;date&quot;</span><span class="op">,</span> </span>
-<span id="cb6-137"><a href="#cb6-137" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">&quot;average&quot;</span><span class="op">,</span></span>
-<span id="cb6-138"><a href="#cb6-138" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">&quot;#636363&quot;</span></span>
-<span id="cb6-139"><a href="#cb6-139" aria-hidden="true" tabindex="-1"></a>      })<span class="op">,</span></span>
-<span id="cb6-140"><a href="#cb6-140" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">tip</span>(data<span class="op">,</span> Plot<span class="op">.</span><span class="fu">pointer</span>({</span>
-<span id="cb6-141"><a href="#cb6-141" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">&quot;date&quot;</span><span class="op">,</span></span>
-<span id="cb6-142"><a href="#cb6-142" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">&quot;average&quot;</span><span class="op">,</span></span>
-<span id="cb6-143"><a href="#cb6-143" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> [<span class="vs">`</span><span class="sc">${</span>d3<span class="op">.</span><span class="fu">timeFormat</span>(<span class="st">&quot;%b %Y&quot;</span>)(d<span class="op">.</span><span class="at">date</span>)<span class="sc">}\n${</span>(d<span class="op">.</span><span class="at">average</span>)<span class="sc">}</span><span class="vs">ppm`</span>]<span class="op">.</span><span class="fu">join</span>(<span class="st">&quot;   &quot;</span>)</span>
-<span id="cb6-144"><a href="#cb6-144" aria-hidden="true" tabindex="-1"></a>    }))<span class="op">,</span></span>
-<span id="cb6-145"><a href="#cb6-145" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">300</span>])</span>
-<span id="cb6-146"><a href="#cb6-146" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
-<span id="cb6-147"><a href="#cb6-147" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">&quot;14px&quot;</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">&quot;&#39;Open Sans&#39;, sans-serif&quot;</span>}<span class="op">,</span></span>
-<span id="cb6-148"><a href="#cb6-148" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
-<span id="cb6-149"><a href="#cb6-149" aria-hidden="true" tabindex="-1"></a>  })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details class="code-fold"><summary>Code</summary><div class="sourceCode cell-code" id="cb6" data-startfrom="121" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 120;"><span id="cb6-121"><a href="#cb6-121" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb6-122"><a href="#cb6-122" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">396</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">640</span><span class="op">,</span></span>
+<span id="cb6-123"><a href="#cb6-123" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="cb6-124"><a href="#cb6-124" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="cb6-125"><a href="#cb6-125" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;&quot;</span><span class="op">,</span></span>
+<span id="cb6-126"><a href="#cb6-126" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelArrow</span><span class="op">:</span> <span class="kw">null</span></span>
+<span id="cb6-127"><a href="#cb6-127" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb6-128"><a href="#cb6-128" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="cb6-129"><a href="#cb6-129" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">300</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">max</span>(data<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">average</span>)]<span class="op">,</span></span>
+<span id="cb6-130"><a href="#cb6-130" aria-hidden="true" tabindex="-1"></a>        <span class="dt">ticks</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span></span>
+<span id="cb6-131"><a href="#cb6-131" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tickSize</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></span>
+<span id="cb6-132"><a href="#cb6-132" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tickPadding</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span></span>
+<span id="cb6-133"><a href="#cb6-133" aria-hidden="true" tabindex="-1"></a>    <span class="dt">axis</span><span class="op">:</span> <span class="st">&quot;right&quot;</span><span class="op">,</span></span>
+<span id="cb6-134"><a href="#cb6-134" aria-hidden="true" tabindex="-1"></a>    <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="cb6-135"><a href="#cb6-135" aria-hidden="true" tabindex="-1"></a>    <span class="dt">label</span><span class="op">:</span> <span class="st">&quot;CO₂ concentration (ppm)&quot;</span><span class="op">,</span></span>
+<span id="cb6-136"><a href="#cb6-136" aria-hidden="true" tabindex="-1"></a>    <span class="dt">labelArrow</span><span class="op">:</span> <span class="kw">null</span></span>
+<span id="cb6-137"><a href="#cb6-137" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb6-138"><a href="#cb6-138" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb6-139"><a href="#cb6-139" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">lineY</span>(data<span class="op">,</span> {</span>
+<span id="cb6-140"><a href="#cb6-140" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">&quot;date&quot;</span><span class="op">,</span> </span>
+<span id="cb6-141"><a href="#cb6-141" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">&quot;average&quot;</span><span class="op">,</span></span>
+<span id="cb6-142"><a href="#cb6-142" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> <span class="st">&quot;#636363&quot;</span></span>
+<span id="cb6-143"><a href="#cb6-143" aria-hidden="true" tabindex="-1"></a>      })<span class="op">,</span></span>
+<span id="cb6-144"><a href="#cb6-144" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">tip</span>(data<span class="op">,</span> Plot<span class="op">.</span><span class="fu">pointer</span>({</span>
+<span id="cb6-145"><a href="#cb6-145" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">&quot;date&quot;</span><span class="op">,</span></span>
+<span id="cb6-146"><a href="#cb6-146" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">&quot;average&quot;</span><span class="op">,</span></span>
+<span id="cb6-147"><a href="#cb6-147" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> [<span class="vs">`</span><span class="sc">${</span>d3<span class="op">.</span><span class="fu">timeFormat</span>(<span class="st">&quot;%b %Y&quot;</span>)(d<span class="op">.</span><span class="at">date</span>)<span class="sc">}\n${</span>(d<span class="op">.</span><span class="at">average</span>)<span class="sc">}</span><span class="vs">ppm`</span>]<span class="op">.</span><span class="fu">join</span>(<span class="st">&quot;   &quot;</span>)</span>
+<span id="cb6-148"><a href="#cb6-148" aria-hidden="true" tabindex="-1"></a>    }))<span class="op">,</span></span>
+<span id="cb6-149"><a href="#cb6-149" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">300</span>])</span>
+<span id="cb6-150"><a href="#cb6-150" aria-hidden="true" tabindex="-1"></a>    ]<span class="op">,</span></span>
+<span id="cb6-151"><a href="#cb6-151" aria-hidden="true" tabindex="-1"></a>    <span class="dt">style</span><span class="op">:</span> {<span class="dt">fontSize</span><span class="op">:</span> <span class="st">&quot;14px&quot;</span><span class="op">,</span> <span class="dt">fontFamily</span><span class="op">:</span> <span class="st">&quot;&#39;Open Sans&#39;, sans-serif&quot;</span>}<span class="op">,</span></span>
+<span id="cb6-152"><a href="#cb6-152" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginTop</span><span class="op">:</span> <span class="dv">45</span><span class="op">,</span></span>
+<span id="cb6-153"><a href="#cb6-153" aria-hidden="true" tabindex="-1"></a>  })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div id="fig-co2" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure"><div aria-describedby="fig-co2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div id="ojs-cell-3" data-nodetype="expression">

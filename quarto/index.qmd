@@ -82,6 +82,10 @@ df |>
     date = "Date",
     average = "CO₂ (ppm)"
   ) |> 
+  cols_align(
+    align = "left",
+    columns = date
+  ) |> 
   fmt_date(
     columns = date,
     date_style = "yMMMM"
