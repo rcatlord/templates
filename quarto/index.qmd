@@ -69,7 +69,7 @@ ojs_define(df = df)
 
 ```{r}
 #| label: tbl-readings
-#| tbl-cap: "Atmospheric CO₂ during 2024"
+#| tbl-cap: "Atmospheric CO₂ between 1958-2024"
 #| code-fold: true
 
 library(gt)
@@ -77,7 +77,8 @@ library(gt)
 df |> 
   arrange(desc(date)) |> 
   gt() |> 
-   cols_label(
+  opt_interactive() |> 
+  cols_label(
     date = "Date",
     average = "CO₂ (ppm)"
   ) |> 
@@ -85,19 +86,14 @@ df |>
     columns = date,
     date_style = "yMMMM"
   ) |> 
-  tab_style(
-    style = cell_text(align  = "right", weight = "bold"),
-    locations = cells_column_labels()
-  ) |> 
-  tab_options(
-    table.align = "left"
-  ) |> 
-   opt_interactive()
+  tab_source_note(
+    source_note = "Source: Scripps Institution of Oceanography at UC San Diego"
+  )
 ```
 
-## Plot data
+## Transform data
 
-@fig-co2 is the [Keeling Curve](https://keelingcurve.ucsd.edu/), an iconic line chart showing changes in atmospheric levels of carbon dioxide since 1958. CO<sub>2</sub> levels are currently rising at around 2.5 parts per million (ppm) each year.
+The data are transposed and converted to a date before plotting in Observable Plot.
 
 ```{ojs}
 //| label: transform-data
@@ -107,6 +103,10 @@ data = transpose(df).map(d => ({
   average: +d.average
 }))
 ```
+
+## Plot data
+
+@fig-co2 is the [Keeling Curve](https://keelingcurve.ucsd.edu/), an iconic line chart showing changes in atmospheric levels of carbon dioxide since 1958. CO<sub>2</sub> levels are currently rising at around 2.5 parts per million (ppm) each year.
 
 ```{ojs}
 //| code-fold: true
