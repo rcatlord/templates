@@ -24,15 +24,14 @@ This report processes and visualises data using [R](https://www.r-project.org/) 
 
 ## Data
 
-The [data](https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html) derive from the Scripps Institution of Oceanography at UC San Diego [@keeling2001exchanges].
+The [data](https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html) derive from the Scripps Institution of Oceanography at UC San Diego [@keeling2005atmospheric].
 
 ## Load packages
 
-::: {.panel-tabset}
-
+::: panel-tabset
 ### R
+
 ```{r}
-#| echo: fenced
 #| label: load-packages
 
 library(readr)
@@ -43,7 +42,6 @@ library(lubridate)
 ### OJS
 
 ```{ojs}
-//| echo: fenced
 //| label: load-libraries
 
 Plot = import("https://cdn.jsdelivr.net/npm/@observablehq/plot/+esm")
@@ -54,7 +52,6 @@ d3 = require("d3@7")
 ## Load data
 
 ```{r}
-#| echo: fenced
 #| label: load-data
 
 df <- read_csv("https://scrippsco2.ucsd.edu/assets/data/atmospheric/stations/in_situ_co2/monthly/monthly_in_situ_co2_mlo.csv", skip = 63, na = "-99.99") |> 
@@ -71,19 +68,18 @@ ojs_define(df = df)
 @tbl-readings shows the latest readings taken from the [Mauna Loa Observatory](https://gml.noaa.gov/obop/mlo/) in Hawaii.
 
 ```{r}
-#| echo: fenced 
 #| label: tbl-readings
 #| tbl-cap: "Atmospheric CO₂ during 2024"
+#| code-fold: true
 
 library(gt)
 
 df |> 
-  filter(year(date) == 2024)|> 
   arrange(desc(date)) |> 
   gt() |> 
    cols_label(
     date = "Date",
-    average = "CO₂"
+    average = "CO₂ (ppm)"
   ) |> 
   fmt_date(
     columns = date,
@@ -94,9 +90,9 @@ df |>
     locations = cells_column_labels()
   ) |> 
   tab_options(
-    table.align = "left",
-    table.width = px(250)
-  )
+    table.align = "left"
+  ) |> 
+   opt_interactive()
 ```
 
 ## Plot data
@@ -105,7 +101,6 @@ df |>
 
 ```{ojs}
 //| label: transform-data
-//| echo: false
 
 data = transpose(df).map(d => ({
   date: new Date(d.date),
@@ -114,7 +109,6 @@ data = transpose(df).map(d => ({
 ```
 
 ```{ojs}
-//| echo: fenced
 //| code-fold: true
 //| label: fig-co2
 //| fig-alt: | 
